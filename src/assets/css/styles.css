@@ -29,8 +29,12 @@
     --box-color-1: #00B8DB0A;
     --box-color-2: #155DFC0D;
     --box-color-3: #9810FA0D;
+    --soft-white-5: #ffffff10;
+    --soft-white-10: #ffffff15;
+    --soft-white-15: #FFFFFF33;
 
     /* NEUTRAL */
+    --background-header: #00000033;
     --background: #021115;
     --surface: #0a141f;
     --surface-variant: #0b1e25;
@@ -208,8 +212,8 @@ ul,
 ol,
 li,
 menu {
-    padding: 0;
-    margin: 0;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 li { list-style: none; }
@@ -457,12 +461,14 @@ p {
 
 .hover {
     transition-duration: var(--tr-duration-short);
-    transition-property: color, opacity;
+    transition-property: color, background;
 }
 
 .hover:hover {
-    color: var(--primary) !important;
-    opacity: 1 !important;
+    background: var(--linear-gradient);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
 }
 
 .w-full {
@@ -483,7 +489,7 @@ span,
     max-height: max-content;
 }
 
-html[dir="ltr"] .arrow-dir { transform: rotateY(180deg); }
+html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
 
 .flex {
     display: flex;
@@ -634,8 +640,12 @@ html[dir="ltr"] .arrow-dir { transform: rotateY(180deg); }
 /**
  * Logo
  */
-
-
+.logo.medium .img-logo {
+    min-width: auto;
+    max-width: max-content;
+    min-height: var(--height-medium);
+    max-height: var(--height-medium);
+}
 
 /**
  * Avatars
@@ -926,11 +936,45 @@ html[dir="ltr"] .arrow-dir { transform: rotateY(180deg); }
  * OTHERS
 \* -------------------------------------------- */
 
+/**
+ * Header
+ */
+.header {
+    background-color: var(--background-header);
+    border-block-end: 1px solid var(--soft-white-15);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 30;
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+}
 
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-4);
+}
 
+.header .container .nav {
+    height: var(--height-medium);
+    border-radius: var(--radius-full);
+    background-color: var(--soft-white-5);
+    border: 1px solid var(--soft-white-15);
+    display: flex;
+    align-items: center;
+    padding-inline: var(--spacing-6);
+}
 
-
-
+.header .container .nav .nav-list {
+    display: flex;
+    align-items: center;
+    
+}
 
 /* -------------------------------------------- *\
  * MAIN
@@ -959,7 +1003,14 @@ html[dir="ltr"] .arrow-dir { transform: rotateY(180deg); }
 /**
  * Fit Size: 992PX
  */
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+    /**
+     * REUSED STYLE
+     */
+    .mobile { display: none !important; }
+
+    .desctop { display: flex !important; }
+}
 
 /**
  * Fit Size: 1200PX
