@@ -10,8 +10,8 @@
     <link rel="canonical" href="URL This Page" />
 
     <!-- favicon -->
-    <link rel="icon" href="./src/assets/images/favicon.png" />
-    <link rel="shortcut icon" href="./src/assets/images/favicon.png" />
+    <link rel="icon" href="" />
+    <link rel="shortcut icon" href="" />
 
     <!-- meta tags -->
     <title>Home | Sweeds</title>
@@ -38,7 +38,7 @@
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 
     <!-- custom aos link -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -59,9 +59,10 @@
 
 <body>
 
-    <header class="header">
+    <!-- Header -->
+    <header class="header" data-fixed-scrolling>
 
-        <div class="container container-xl">
+        <div class="container container-lg">
 
             <a href="./index.html" class="logo medium">
                 <img src="./src/assets/images/logo.svg" alt="Sweeds" loading="lazy" class="img-logo img-cover" />
@@ -71,43 +72,43 @@
                 <ul class="nav-list">
 
                     <li>
-                        <a href="#home" class="nav-link hover">
+                        <a href="#home" class="text-on-background-variant hover">
                             <p class="text-body-medium">Home</p>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#services" class="nav-link hover">
+                        <a href="#services" class="text-on-background-variant hover">
                             <p class="text-body-medium">Services</p>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#about_us" class="nav-link hover">
+                        <a href="#about_us" class="text-on-background-variant hover">
                             <p class="text-body-medium">About Us</p>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#testimonials" class="nav-link hover">
+                        <a href="#testimonials" class="text-on-background-variant hover">
                             <p class="text-body-medium">Testimonials</p>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#workshops" class="nav-link hover">
+                        <a href="#workshops" class="text-on-background-variant hover">
                             <p class="text-body-medium">Workshops</p>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#releases" class="nav-link hover">
+                        <a href="#releases" class="text-on-background-variant hover">
                             <p class="text-body-medium">Releases</p>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#media" class="nav-link hover">
+                        <a href="#media" class="text-on-background-variant hover">
                             <p class="text-body-medium">Media</p>
                         </a>
                     </li>
@@ -116,7 +117,7 @@
             </nav>
 
             <div class="wrapper-item">
-                <a href="#" class="btn filled medium">
+                <a href="#" class="btn filled medium desctop">
                     <p class="text-body-large">Let’s Talk</p>
 
                     <div class="arrow-dir">
@@ -126,16 +127,1698 @@
                     <div class="state-layer"></div>
                 </a>
 
-                <button type="button" class="icon-btn filled outline medium">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
-                </button>
+                <span data-bs-toggle="offcanvas" data-bs-target="#sideSheet">
+                    <button type="button" class="icon-btn text medium mobile" data-bs-toggle="tooltip" data-bs-title="Open Menu" data-bs-placement="bottom">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+                    </button>
+                </span>
             </div>
 
         </div>
 
     </header>
 
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facere nemo et quas explicabo voluptatum, excepturi tempora soluta delectus dolores molestias commodi tenetur ullam consequatur expedita quis earum minima vitae corporis alias aut? Placeat, enim, nisi omnis porro ut veniam itaque libero totam repellendus impedit saepe delectus corrupti repudiandae, fugiat ipsa inventore? Culpa assumenda rerum ea iste, sit hic laborum iusto officia praesentium? Itaque blanditiis sit praesentium quam similique magni, ipsum vitae voluptatibus, minima optio illum repellendus neque labore placeat a. Fugiat, architecto fuga modi expedita obcaecati cupiditate! Quia, dolore beatae? Voluptatem, animi. Corrupti illum alias nesciunt velit pariatur explicabo.
+    <!-- Side Sheet -->
+    <div class="offcanvas offcanvas-end" id="sideSheet">
+
+        <div class="offcanvas-header">
+            <h5 class="text-title-medium text-linear-gradient">Menu</h5>
+
+            <button type="button" class="icon-btn text small" data-bs-dismiss="offcanvas">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+            </button>
+        </div>
+
+        <ul class="offcanvas-list custom-scrollbar">
+           
+            <li>
+                <a href="#home" class="offcanvas-item">
+                    <p class="text-body-medium" data-bs-dismiss="offcanvas">Home</p>
+
+                    <div class="state-layer"></div>
+                </a>
+            </li>
+
+            <li>
+                <a href="#services" class="offcanvas-item">
+                    <p class="text-body-medium" data-bs-dismiss="offcanvas">Services</p>
+
+                    <div class="state-layer"></div>
+                </a>
+            </li>
+
+            <li>
+                <a href="#about_us" class="offcanvas-item">
+                    <p class="text-body-medium" data-bs-dismiss="offcanvas">About Us</p>
+
+                    <div class="state-layer"></div>
+                </a>
+            </li>
+
+            <li>
+                <a href="#testimonials" class="offcanvas-item">
+                    <p class="text-body-medium" data-bs-dismiss="offcanvas">Testimonials</p>
+
+                    <div class="state-layer"></div>
+                </a>
+            </li>
+
+            <li>
+                <a href="#workshops" class="offcanvas-item">
+                    <p class="text-body-medium" data-bs-dismiss="offcanvas">Workshops</p>
+
+                    <div class="state-layer"></div>
+                </a>
+            </li>
+
+            <li>
+                <a href="#releases" class="offcanvas-item">
+                    <p class="text-body-medium" data-bs-dismiss="offcanvas">Releases</p>
+
+                    <div class="state-layer"></div>
+                </a>
+            </li>
+
+            <li>
+                <a href="#media" class="offcanvas-item">
+                    <p class="text-body-medium" data-bs-dismiss="offcanvas">Media</p>
+
+                    <div class="state-layer"></div>
+                </a>
+            </li>
+
+        </ul>
+
+        <div class="offcanvas-footer">
+
+            <div class="wrapper-block">
+                <p class="text-body-large text-on-background-variant">Connect with me:</p>
+
+                <ul class="wrapper-item">
+
+                    <li>
+                        <a href="mailto:" target="_blank" class="icon-btn text medium">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" /><path d="M3 7l9 6l9 -6" /></svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" target="_blank" class="icon-btn text medium">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" /><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10" /></svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" target="_blank" class="icon-btn text medium">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" target="_blank" class="icon-btn text medium">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <a href="#" class="btn filled medium w-full">
+                <p class="text-body-large">Let’s Talk</p>
+
+                <div class="arrow-dir">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+                </div>
+
+                <div class="state-layer"></div>
+            </a>
+
+        </div>
+
+    </div>
+
+    <main class="main">
+
+        <article>
+
+            <!-- Hero -->
+            <section class="hero section" id="home">
+
+                <div class="box-1 desctop" data-aos="zoom-in"></div>
+                <div class="box-2 desctop" data-aos="zoom-in"></div>
+                <div class="box-3"></div>
+
+                <div class="container container-lg">
+
+                    <div class="grid-2-base">
+
+                        <div class="hero-content" data-aos="fade-up">
+
+                            <div class="ovarlay">
+                                
+                                <div class="avatar-group">
+
+                                    <div class="avatar extra-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+
+                                        <img src="./src/assets/images/client-1.svg" alt="client name" loading="lazy" class="img-avatar img-cover" />
+                                    </div>
+                                    
+                                    <div class="avatar extra-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+
+                                        <img src="./src/assets/images/client-2.svg" alt="client name" loading="lazy" class="img-avatar img-cover" />
+                                    </div>
+                                    
+                                    <div class="avatar extra-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+
+                                        <img src="./src/assets/images/client-3.svg" alt="client name" loading="lazy" class="img-avatar img-cover" />
+                                    </div>
+                                    
+                                    <div class="avatar extra-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+
+                                        <img src="./src/assets/images/client-4.svg" alt="client name" loading="lazy" class="img-avatar img-cover" />
+                                    </div>
+                                    
+                                    <div class="avatar extra-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+
+                                        <img src="./src/assets/images/client-5.svg" alt="client name" loading="lazy" class="img-avatar img-cover" />
+                                    </div>
+
+                                </div>
+
+                                <div class="wrapper-item">
+                                    <h4 class="text-title-large text-secondary"><span data-counts="24">24</span>+</h4>
+
+                                    <p class="text-body-small">Happy Clients</p>
+                                </div>
+
+                            </div>
+
+                            <h3 class="text-display-small text-linear-gradient mobile">Expertise You Can Trust. Insight You Can Act On</h3>
+
+                            <h1 class="text-display-large text-linear-gradient desctop">Expertise You Can Trust. Insight You Can Act On</h1>
+
+                            <h4 class="text-title-large">Revenue leader with 18+ years of experience driving sustainable growth, achieving up to 60% YoY revenue increase.</h4>
+
+                            <div class="wrapper-block">
+                                <p class="text-body-large text-on-background-variant">Connect with me:</p>
+
+                                <ul class="wrapper-item">
+
+                                    <li>
+                                        <a href="mailto:" target="_blank" class="icon-btn text medium" data-bs-toggle="tooltip" data-bs-title="Go To Email" data-bs-placement="bottom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" /><path d="M3 7l9 6l9 -6" /></svg>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" target="_blank" class="icon-btn text medium" data-bs-toggle="tooltip" data-bs-title="Go To LinkedIn" data-bs-placement="bottom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" /><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10" /></svg>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" target="_blank" class="icon-btn text medium" data-bs-toggle="tooltip" data-bs-title="Go To Facebook" data-bs-placement="bottom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" target="_blank" class="icon-btn text medium" data-bs-toggle="tooltip" data-bs-title="Go To Whatsapp" data-bs-placement="bottom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <img src="./src/assets/images/img-hero.svg" alt="img hero" loading="lazy" class="img-contain" data-aos="zoom-in-up" />
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Services -->
+            <section class="services section" id="services">
+
+                <div class="box-1 desctop" data-aos="zoom-in"></div>
+                <div class="box-2 desctop" data-aos="zoom-in"></div>
+                <div class="box-3"></div>
+
+                <div class="container container-lg">
+
+                    <div class="title-sec" data-aos="zoom-in-up">
+
+                        <a href="#services" class="btn tonal extra-small">
+                            <p class="text-body-medium">Services</p>
+                        </a>
+
+                        <span class="mobile">
+                            <h2 class="text-display-small">What <span class="text-linear-gradient">We Do</span></h2>
+                        </span>
+
+                        <span class="desctop">
+                            <h2 class="text-display-medium">What <span class="text-linear-gradient">We Do</span></h2>
+                        </span>
+
+                        <h5 class="text-title-medium text-on-background-variant">We support businesses with focused, practical solutions that drive growth, clarity, and long-term performance.</h5>
+
+                    </div>
+
+                    <div class="grid-4-base">
+
+                        <div class="card filled" data-aos="zoom-in-up">
+
+                            <div class="card-body">
+
+                                <span class="icon-btn tonal large opacity-75">
+                                    <img src="./src/assets/images/icon-service-1.svg" alt="Business Growth" loading="lazy" class="img-contain" />
+                                </span>
+
+                                <div class="wrapper-block">
+                                    <h5 class="text-title-large line-clamp line-clamp-1">Business Growth</h5>
+
+                                    <p class="text-on-background-variant text-body-large line-clamp line-clamp-3">Sustainable growth through structured scaling and opportunity identification.</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card filled" data-aos="zoom-in-up">
+
+                            <div class="card-body">
+
+                                <span class="icon-btn tonal large opacity-75">
+                                    <img src="./src/assets/images/icon-service-2.svg" alt="Strategy" loading="lazy" class="img-contain" />
+                                </span>
+
+                                <div class="wrapper-block">
+                                    <h5 class="text-title-large line-clamp line-clamp-1">Strategy</h5>
+
+                                    <p class="text-on-background-variant text-body-large line-clamp line-clamp-3">Clear, actionable strategies aligned with real market conditions.</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card filled" data-aos="zoom-in-up">
+
+                            <div class="card-body">
+
+                                <span class="icon-btn tonal large opacity-75">
+                                    <img src="./src/assets/images/icon-service-3.svg" alt="Operations Excellence" loading="lazy" class="img-contain" />
+                                </span>
+
+                                <div class="wrapper-block">
+                                    <h5 class="text-title-large line-clamp line-clamp-1">Operations Excellence</h5>
+
+                                    <p class="text-on-background-variant text-body-large line-clamp line-clamp-3">Efficient systems that improve performance and execution.</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card filled" data-aos="zoom-in-up">
+
+                            <div class="card-body">
+
+                                <span class="icon-btn tonal large opacity-75">
+                                    <img src="./src/assets/images/icon-service-4.svg" alt="Market Positioning" loading="lazy" class="img-contain" />
+                                </span>
+
+                                <div class="wrapper-block">
+                                    <h5 class="text-title-large line-clamp line-clamp-1">Market Positioning</h5>
+
+                                    <p class="text-on-background-variant text-body-large line-clamp line-clamp-3">Strong differentiation and clarity in how the business competes.</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Clients -->
+            <section class="clients section">
+
+                <div class="container container-lg">
+
+                    <div class="title-sec" data-aos="zoom-in-up">
+                        <h4 class="text-title-large text-on-background-variant opacity-75">Trusted by Industry Leaders</h4>
+                    </div>
+
+                    <div class="grid-6-base">
+
+                        <div class="card" data-aos="zoom-in-up">
+
+                            <div class="card-body">
+
+                                <img src="./src/assets/images/leader-1.svg" alt="ULEGYPT" loading="lazy" class="img-contain" />
+
+                            </div>
+
+                        </div>
+
+                        <div class="card" data-aos="zoom-in-up">
+
+                            <div class="card-body">
+
+                                <img src="./src/assets/images/leader-2.svg" alt="Be Care" loading="lazy" class="img-contain" />
+
+                            </div>
+
+                        </div>
+
+                        <div class="card" data-aos="zoom-in-up">
+
+                            <div class="card-body">
+
+                                <img src="./src/assets/images/leader-3.svg" alt="LABEX tech" loading="lazy" class="img-contain" />
+
+                            </div>
+
+                        </div>
+
+                        <div class="card" data-aos="zoom-in-up">
+
+                            <div class="card-body">
+
+                                <img src="./src/assets/images/leader-4.svg" alt="Marnx" loading="lazy" class="img-contain" />
+
+                            </div>
+
+                        </div>
+
+                        <div class="card" data-aos="zoom-in-up">
+
+                            <div class="card-body">
+
+                                <img src="./src/assets/images/leader-5.svg" alt="Fac Tec" loading="lazy" class="img-contain" />
+
+                            </div>
+
+                        </div>
+
+                        <div class="card" data-aos="zoom-in-up">
+
+                            <div class="card-body">
+
+                                <img src="./src/assets/images/leader-6.svg" alt="POP" loading="lazy" class="img-contain" />
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- About Us -->
+            <section class="about-us section" id="about_us">
+
+                <div class="box-1 desctop" data-aos="zoom-in"></div>
+                <div class="box-2 desctop" data-aos="zoom-in"></div>
+                <div class="box-3"></div>
+
+                <div class="container container-lg">
+
+                    <div class="title-sec" data-aos="zoom-in-up">
+
+                        <span class="mobile">
+                            <h2 class="text-display-small">About <span class="text-linear-gradient">Sweeds</span></h2>
+                        </span>
+
+                        <span class="desctop">
+                            <h2 class="text-display-medium">About <span class="text-linear-gradient">Sweeds</span></h2>
+                        </span>
+
+                        <h5 class="text-title-medium text-on-background-variant">We support businesses with focused, practical solutions that drive growth, clarity, and long-term performance.</h5>
+
+                    </div>
+
+                    <div class="grid-2-base">
+
+                        <img src="./src/assets/images/img-about-us.svg" alt="img about us" loading="lazy" class="img-contain" data-aos="zoom-in-up" />
+
+                        <div class="about-us-content" data-aos="zoom-in-up">
+
+                            <h1 class="text-headline-large">Revenue Leadership You Can Trust</h1>
+
+                            <p class="text-body-large">Dynamic revenue leader with <span data-counts="18">18</span>+ years of hands-on experience in the GCC healthcare sector, focused on diagnostics and business model turnaround. I help struggling companies regain direction, rebuild systems, and return to profitable growth through clear strategy and strong execution.</p>
+
+                            <ul class="wrapper-block">
+
+                                <li class="flex">
+                                    <span class="text-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-circle-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M9 12l2 2l4 -4" /></svg>
+                                    </span>
+
+                                    <p class="text-body-large text-on-background-variant">Restructuring underperforming healthcare and diagnostics businesses.</p>
+                                </li>
+
+                                <li class="flex">
+                                    <span class="text-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-circle-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M9 12l2 2l4 -4" /></svg>
+                                    </span>
+
+                                    <p class="text-body-large text-on-background-variant">Leading Go-To-Market execution across Saudi Arabia and the UAE.</p>
+                                </li>
+
+                                <li class="flex">
+                                    <span class="text-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-circle-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M9 12l2 2l4 -4" /></svg>
+                                    </span>
+
+                                    <p class="text-body-large text-on-background-variant">Driving up to <span data-counts="60">60</span>% YoY revenue growth in competitive markets.</p>
+                                </li>
+
+                                <li class="flex">
+                                    <span class="text-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-circle-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M9 12l2 2l4 -4" /></svg>
+                                    </span>
+
+                                    <p class="text-body-large text-on-background-variant">Aligning strategy with execution through training and coaching.</p>
+                                </li>
+
+                                <li class="flex">
+                                    <span class="text-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-circle-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M9 12l2 2l4 -4" /></svg>
+                                    </span>
+
+                                    <p class="text-body-large text-on-background-variant">Building sustainable, profit-focused business models.</p>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                
+            </section>
+
+            <!-- Time Line Sec -->
+            <div class="time-line-sec">
+
+                <div class="box-1 desctop" data-aos="zoom-in"></div>
+                <div class="box-2 desctop" data-aos="zoom-in"></div>
+                <div class="box-3"></div>
+
+                <div class="container container-lg">
+
+                    <div class="title-sec" data-aos="zoom-in-up">
+
+                        <span class="btn outline large rounded-pill">
+                            <h5 class="text-title-medium">Professional Experience</h5>
+                        </span>
+
+                    </div>
+
+                    <ul class="time-line">
+
+                        <li class="justify-content-end" data-aos="fade-up">
+                            <div class="card blur">
+
+                                <div class="card-body">
+
+                                    <div class="flex align-items-start gap-4">
+
+                                        <div class="avatar medium">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.813 11.612c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.986 4.986l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.292 -1.293l.292 -.293l.106 -.095c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.674 4.675a4 4 0 0 1 -3.775 3.599l-.206 .005h-12a4 4 0 0 1 -3.98 -3.603l6.687 -6.69l.106 -.095zm9.187 -9.612a4 4 0 0 1 3.995 3.8l.005 .2v9.585l-3.293 -3.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-.307 .306l-2.293 -2.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-5.307 5.306v-9.585a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-2.99 5l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
+
+                                            <img src="./src/assets/images/jop-1.svg" alt="Beta Medical Laboratories – CEO (Current), SA" loading="lazy" class="img-avatar img-cover" />
+                                        </div>
+
+                                        <div class="wrapper-block">
+                                            <h4 class="text-title-large text-linear-gradient">Beta Medical Laboratories – CEO (Current), SA</h4>
+
+                                            <h5 class="text-title-medium opacity-75">Leading a full turnaround journey: restructuring, rebranding, and team rebuilding. Focused on  creating a performance-driven culture and enabling sustainable B2C growth.</h5>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up">
+                            <div class="card blur">
+
+                                <div class="card-body">
+
+                                    <div class="flex align-items-start gap-4">
+
+                                        <div class="avatar medium">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.813 11.612c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.986 4.986l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.292 -1.293l.292 -.293l.106 -.095c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.674 4.675a4 4 0 0 1 -3.775 3.599l-.206 .005h-12a4 4 0 0 1 -3.98 -3.603l6.687 -6.69l.106 -.095zm9.187 -9.612a4 4 0 0 1 3.995 3.8l.005 .2v9.585l-3.293 -3.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-.307 .306l-2.293 -2.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-5.307 5.306v-9.585a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-2.99 5l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
+
+                                            <img src="./src/assets/images/jop-2.svg" alt="SWEED’S Consulting – Founder & CEO, USA" loading="lazy" class="img-avatar img-cover" />
+                                        </div>
+
+                                        <div class="wrapper-block">
+                                            <h4 class="text-title-large text-linear-gradient">SWEED’S Consulting – Founder & CEO, USA</h4>
+
+                                            <h5 class="text-title-medium opacity-75">Advising SMEs on business transformation, team development, and go-to-market strategies.  Delivered practical training to leaders and frontline teams.</h5>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="justify-content-end" data-aos="fade-up">
+                            <div class="card blur">
+
+                                <div class="card-body">
+
+                                    <div class="flex align-items-start gap-4">
+
+                                        <div class="avatar medium">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.813 11.612c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.986 4.986l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.292 -1.293l.292 -.293l.106 -.095c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.674 4.675a4 4 0 0 1 -3.775 3.599l-.206 .005h-12a4 4 0 0 1 -3.98 -3.603l6.687 -6.69l.106 -.095zm9.187 -9.612a4 4 0 0 1 3.995 3.8l.005 .2v9.585l-3.293 -3.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-.307 .306l-2.293 -2.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-5.307 5.306v-9.585a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-2.99 5l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
+
+                                            <img src="./src/assets/images/jop-3.svg" alt="TIBYANA Healthcare – Head of Business Development, SA" loading="lazy" class="img-avatar img-cover" />
+                                        </div>
+
+                                        <div class="wrapper-block">
+                                            <h4 class="text-title-large text-linear-gradient">TIBYANA Healthcare – Head of Business Development, SA</h4>
+
+                                            <h5 class="text-title-medium opacity-75">Drove partnerships and mentored business units to align strategy with execution.</h5>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up">
+                            <div class="card blur">
+
+                                <div class="card-body">
+
+                                    <div class="flex align-items-start gap-4">
+
+                                        <div class="avatar medium">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.813 11.612c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.986 4.986l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.292 -1.293l.292 -.293l.106 -.095c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.674 4.675a4 4 0 0 1 -3.775 3.599l-.206 .005h-12a4 4 0 0 1 -3.98 -3.603l6.687 -6.69l.106 -.095zm9.187 -9.612a4 4 0 0 1 3.995 3.8l.005 .2v9.585l-3.293 -3.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-.307 .306l-2.293 -2.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-5.307 5.306v-9.585a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-2.99 5l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
+
+                                            <img src="./src/assets/images/jop-4.svg" alt="SWEED’S Consulting – Founder & CEO, USA" loading="lazy" class="img-avatar img-cover" />
+                                        </div>
+
+                                        <div class="wrapper-block">
+                                            <h4 class="text-title-large text-linear-gradient">Al Borg Diagnostics ME – Regional BD Director, SA</h4>
+
+                                            <h5 class="text-title-medium opacity-75">Managed multi-region sales teams and led consistent revenue growth through coaching and  structured performance management.</h5>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Counter -->
+            <section class="counter section">
+
+                <div class="container container-lg">
+
+                    <div class="grid-3-base">
+
+                        <div class="wrapper-block" data-aos="zoom-in">
+                            <h2 class="text-display-medium text-linear-gradient"><span data-counts="4">4</span>+</h2>
+
+                            <h4 class="text-title-large text-on-background-variant">Countries worked in</h4>
+                        </div>
+
+                        <div class="wrapper-block" data-aos="zoom-in">
+                            <h2 class="text-display-medium text-linear-gradient"><span data-counts="50">50</span>+</h2>
+
+                            <h4 class="text-title-large text-on-background-variant">Revenues generated</h4>
+                        </div>
+
+                        <div class="wrapper-block" data-aos="zoom-in">
+                            <h2 class="text-display-medium text-linear-gradient"><span data-counts="120">120</span>+</h2>
+
+                            <h4 class="text-title-large text-on-background-variant">Businesses scaled</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Testimonials -->
+            <section class="testimonials section" id="testimonials">
+
+                <div class="box-1 desctop" data-aos="zoom-in"></div>
+                <div class="box-2 desctop" data-aos="zoom-in"></div>
+                <div class="box-3"></div>
+
+                <div class="container container-lg">
+
+                    <div class="title-sec" data-aos="zoom-in-up">
+
+                        <span class="mobile">
+                            <h2 class="text-display-small"><span class="text-linear-gradient">Testimonials</span></h2>
+                        </span>
+
+                        <span class="desctop">
+                            <h2 class="text-display-medium"><span class="text-linear-gradient">Testimonials</span></h2>
+                        </span>
+
+                        <h5 class="text-title-medium text-on-background-variant">Insights and feedback from leaders and teams across different markets.</h5>
+
+                    </div>
+
+                    <div class="swipper-container" data-swippers>
+
+                        <button type="button" class="icon-btn extra-large" data-swipper-prev data-bs-toggle="tooltip" data-bs-title="Prev" data-bs-placement="bottom">
+                            <div class="arrow-dir">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
+                            </div>
+                        </button>
+
+                        <ul class="swipper-2-base" data-swipper-list>
+
+                            <li class="swipper-item" data-aos="zoom-in-up">
+                                <div class="card blur">
+
+                                    <div class="card-body">
+
+                                        <div class="wrapper-between">
+                                            <div class="icon-btn filled large">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-quote"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5" /><path d="M19 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5" /></svg>
+                                            </div>
+
+                                            <div class="ratings">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                            </div>
+                                        </div>
+
+                                        <h5 class="text-title-medium line-clamp line-clamp-6">It was a pleasure to work with someone such as Mohamed Sweed he is very enthusiastic, passionate, result oriented and organized person. Actually he makes a tangible difference at Bright Futures Education Consultancy in the way of new product development, resources utilization and profit maximization. Sincerely.</h5>
+
+                                        <div class="wrapper-content">
+                                            <h4 class="text-title-large line-clamp line-clamp-1">Anas Ahmed</h4>
+
+                                            <p class="text-body-medium text-secondary">MBA Chief Executive Officer at Bright Future BF</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <li class="swipper-item" data-aos="zoom-in-up">
+                                <div class="card blur">
+
+                                    <div class="card-body">
+
+                                        <div class="wrapper-between">
+                                            <div class="icon-btn filled large">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-quote"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5" /><path d="M19 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5" /></svg>
+                                            </div>
+
+                                            <div class="ratings">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                            </div>
+                                        </div>
+
+                                        <h5 class="text-title-medium line-clamp line-clamp-6">It was a pleasure to work with someone such as Mohamed Sweed he is very enthusiastic, passionate, result oriented and organized person. Actually he makes a tangible difference at Bright Futures Education Consultancy in the way of new product development, resources utilization and profit maximization. Sincerely.</h5>
+
+                                        <div class="wrapper-content">
+                                            <h4 class="text-title-large line-clamp line-clamp-1">Anas Ahmed</h4>
+
+                                            <p class="text-body-medium text-secondary">MBA Chief Executive Officer at Bright Future BF</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <li class="swipper-item" data-aos="zoom-in-up">
+                                <div class="card blur">
+
+                                    <div class="card-body">
+
+                                        <div class="wrapper-between">
+                                            <div class="icon-btn filled large">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-quote"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5" /><path d="M19 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5" /></svg>
+                                            </div>
+
+                                            <div class="ratings">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                            </div>
+                                        </div>
+
+                                        <h5 class="text-title-medium line-clamp line-clamp-6">It was a pleasure to work with someone such as Mohamed Sweed he is very enthusiastic, passionate, result oriented and organized person. Actually he makes a tangible difference at Bright Futures Education Consultancy in the way of new product development, resources utilization and profit maximization. Sincerely.</h5>
+
+                                        <div class="wrapper-content">
+                                            <h4 class="text-title-large line-clamp line-clamp-1">Anas Ahmed</h4>
+
+                                            <p class="text-body-medium text-secondary">MBA Chief Executive Officer at Bright Future BF</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </li>
+
+                        </ul>
+
+                        <button type="button" class="icon-btn extra-large" data-swipper-next data-bs-toggle="tooltip" data-bs-title="Next" data-bs-placement="bottom">
+                            <div class="arrow-dir">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
+                            </div>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Our Workshops -->
+            <section class="workshops section" id="workshops">
+
+                <div class="box-1 desctop" data-aos="zoom-in"></div>
+                <div class="box-2 desctop" data-aos="zoom-in"></div>
+                <div class="box-3"></div>
+
+                <div class="container container-lg">
+
+                    <div class="title-sec" data-aos="zoom-in-up">
+
+                        <span class="mobile">
+                            <h2 class="text-display-small">Our <span class="text-linear-gradient">Workshops</span></h2>
+                        </span>
+
+                        <span class="desctop">
+                            <h2 class="text-display-medium">Our <span class="text-linear-gradient">Workshops</span></h2>
+                        </span>
+
+                        <h5 class="text-title-medium text-on-background-variant">We support businesses with focused, practical solutions that drive growth, clarity, and long-term performance.</h5>
+
+                        <ul class="nav nav-tabs custom-scrollbar" id="workshops-tabs">
+
+                            <li class="nav-item">
+                                <button type="button" class="nav-link active" id="all-workshops-tab" data-bs-toggle="tab" data-bs-target="#all-workshops">
+                                    <p class="text-body-medium">All</p>
+
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="nav-item">
+                                <button type="button" class="nav-link" id="sales-basic-tab" data-bs-toggle="tab" data-bs-target="#sales-basic">
+                                    <p class="text-body-medium">Sales Basic</p>
+
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="nav-item">
+                                <button type="button" class="nav-link" id="sales-boosting-tab" data-bs-toggle="tab" data-bs-target="#sales-boosting">
+                                    <p class="text-body-medium">Sales Boosting</p>
+
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="nav-item">
+                                <button type="button" class="nav-link" id="live-tab" data-bs-toggle="tab" data-bs-target="#live">
+                                    <p class="text-body-medium">Live</p>
+
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="tab-content" id="workshops-tabs">
+
+                        <div class="tab-pane fade show active" id="all-workshops">
+                            
+                            <ul class="grid-3-base">
+
+                                <li data-aos="zoom-in-up">
+                                    <a href="#" class="card filled filled-hover">
+    
+                                        <div class="figure">
+                                            <div class="icon-big opacity-75">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.813 11.612c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.986 4.986l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.292 -1.293l.292 -.293l.106 -.095c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.674 4.675a4 4 0 0 1 -3.775 3.599l-.206 .005h-12a4 4 0 0 1 -3.98 -3.603l6.687 -6.69l.106 -.095zm9.187 -9.612a4 4 0 0 1 3.995 3.8l.005 .2v9.585l-3.293 -3.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-.307 .306l-2.293 -2.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-5.307 5.306v-9.585a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-2.99 5l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
+                                            </div>
+    
+                                            <img src="./src/assets/images/workshop-1.svg" alt="Lorem ipsum dolor sit amet " loading="lazy" class="img-card img-cover" />
+    
+                                            <span class="btn filled extra-small">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 3.34a10 10 0 1 1 -4.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 4.995 -8.336z" /></svg>
+    
+                                                <p class="text-body-medium">Sales Basic</p>
+                                            </span>
+                                        </div>
+    
+                                        <div class="card-body">
+                                            <div class="wrapper-block">
+                                                <h4 class="text-title-large line-clamp line-clamp-2">Lorem ipsum dolor sit amet</h4>
+        
+                                                <p class="text-body-medium text-on-background-variant line-clamp line-clamp-4">Lorem ipsum dolor sit amet consectetur. Vestibulum euismod orci quis in molestie enim semper vitae. Sed vel sit elementum ornare tellus integer.</p>
+                                            </div>
+    
+                                            <div class="wrapper-item">
+                                                <span class="btn tonal extra-small">
+                                                    <p class="text-label-small text-on-background-variant">Market Expansion</p>
+                                                </span>
+    
+                                                <span class="btn tonal extra-small">
+                                                    <p class="text-label-small text-on-background-variant">Growth Strategy</p>
+                                                </span>
+                                                
+                                                <span class="btn tonal extra-small">
+                                                    <p class="text-label-small text-on-background-variant">Revenue Models</p>
+                                                </span>
+                                            </div>
+                                        </div>
+    
+                                    </a>
+                                </li>
+
+                                <li data-aos="zoom-in-up">
+                                    <a href="#" class="card filled filled-hover">
+    
+                                        <div class="figure">
+                                            <div class="icon-big opacity-75">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.813 11.612c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.986 4.986l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.292 -1.293l.292 -.293l.106 -.095c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.674 4.675a4 4 0 0 1 -3.775 3.599l-.206 .005h-12a4 4 0 0 1 -3.98 -3.603l6.687 -6.69l.106 -.095zm9.187 -9.612a4 4 0 0 1 3.995 3.8l.005 .2v9.585l-3.293 -3.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-.307 .306l-2.293 -2.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-5.307 5.306v-9.585a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-2.99 5l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
+                                            </div>
+    
+                                            <img src="./src/assets/images/workshop-2.svg" alt="Lorem ipsum dolor sit amet " loading="lazy" class="img-card img-cover" />
+    
+                                            <span class="btn filled extra-small">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 3.34a10 10 0 1 1 -4.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 4.995 -8.336z" /></svg>
+    
+                                                <p class="text-body-medium">Sales Boosting</p>
+                                            </span>
+                                        </div>
+    
+                                        <div class="card-body">
+                                            <div class="wrapper-block">
+                                                <h4 class="text-title-large line-clamp line-clamp-2">Lorem ipsum dolor sit amet</h4>
+        
+                                                <p class="text-body-medium text-on-background-variant line-clamp line-clamp-4">Lorem ipsum dolor sit amet consectetur. Vestibulum euismod orci quis in molestie enim semper vitae. Sed vel sit elementum ornare tellus integer.</p>
+                                            </div>
+    
+                                            <div class="wrapper-item">
+                                                <span class="btn tonal extra-small">
+                                                    <p class="text-label-small text-on-background-variant">Market Expansion</p>
+                                                </span>
+    
+                                                <span class="btn tonal extra-small">
+                                                    <p class="text-label-small text-on-background-variant">Growth Strategy</p>
+                                                </span>
+                                                
+                                                <span class="btn tonal extra-small">
+                                                    <p class="text-label-small text-on-background-variant">Revenue Models</p>
+                                                </span>
+                                            </div>
+                                        </div>
+    
+                                    </a>
+                                </li>
+
+                                <li data-aos="zoom-in-up">
+                                    <a href="#" class="card filled filled-hover">
+    
+                                        <div class="figure">
+                                            <div class="icon-big opacity-75">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.813 11.612c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.986 4.986l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.292 -1.293l.292 -.293l.106 -.095c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.674 4.675a4 4 0 0 1 -3.775 3.599l-.206 .005h-12a4 4 0 0 1 -3.98 -3.603l6.687 -6.69l.106 -.095zm9.187 -9.612a4 4 0 0 1 3.995 3.8l.005 .2v9.585l-3.293 -3.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-.307 .306l-2.293 -2.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-5.307 5.306v-9.585a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-2.99 5l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
+                                            </div>
+    
+                                            <img src="./src/assets/images/workshop-3.svg" alt="Lorem ipsum dolor sit amet " loading="lazy" class="img-card img-cover" />
+    
+                                            <span class="btn filled extra-small">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 3.34a10 10 0 1 1 -4.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 4.995 -8.336z" /></svg>
+    
+                                                <p class="text-body-medium">Live</p>
+                                            </span>
+                                        </div>
+    
+                                        <div class="card-body">
+                                            <div class="wrapper-block">
+                                                <h4 class="text-title-large line-clamp line-clamp-2">Lorem ipsum dolor sit amet</h4>
+        
+                                                <p class="text-body-medium text-on-background-variant line-clamp line-clamp-4">Lorem ipsum dolor sit amet consectetur. Vestibulum euismod orci quis in molestie enim semper vitae. Sed vel sit elementum ornare tellus integer.</p>
+                                            </div>
+    
+                                            <div class="wrapper-item">
+                                                <span class="btn tonal extra-small">
+                                                    <p class="text-label-small text-on-background-variant">Market Expansion</p>
+                                                </span>
+    
+                                                <span class="btn tonal extra-small">
+                                                    <p class="text-label-small text-on-background-variant">Growth Strategy</p>
+                                                </span>
+                                                
+                                                <span class="btn tonal extra-small">
+                                                    <p class="text-label-small text-on-background-variant">Revenue Models</p>
+                                                </span>
+                                            </div>
+                                        </div>
+    
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="tab-pane fade" id="sales-basic">
+                            
+                            <ul class="grid-3-base">
+
+                                <li data-aos="zoom-in-up">
+                                    <a href="#" class="card filled filled-hover">
+
+                                        <div class="figure">
+                                            <div class="icon-big opacity-75">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.813 11.612c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.986 4.986l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.292 -1.293l.292 -.293l.106 -.095c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.674 4.675a4 4 0 0 1 -3.775 3.599l-.206 .005h-12a4 4 0 0 1 -3.98 -3.603l6.687 -6.69l.106 -.095zm9.187 -9.612a4 4 0 0 1 3.995 3.8l.005 .2v9.585l-3.293 -3.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-.307 .306l-2.293 -2.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-5.307 5.306v-9.585a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-2.99 5l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
+                                            </div>
+
+                                            <img src="./src/assets/images/workshop-1.svg" alt="Lorem ipsum dolor sit amet " loading="lazy" class="img-card img-cover" />
+
+                                            <span class="btn filled extra-small">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 3.34a10 10 0 1 1 -4.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 4.995 -8.336z" /></svg>
+
+                                                <p class="text-body-medium">Sales Basic</p>
+                                            </span>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <div class="wrapper-block">
+                                                <h4 class="text-title-large line-clamp line-clamp-2">Lorem ipsum dolor sit amet</h4>
+        
+                                                <p class="text-body-medium text-on-background-variant line-clamp line-clamp-4">Lorem ipsum dolor sit amet consectetur. Vestibulum euismod orci quis in molestie enim semper vitae. Sed vel sit elementum ornare tellus integer.</p>
+                                            </div>
+
+                                            <div class="wrapper-item">
+                                                <span class="btn tonal extra-small">
+                                                    <p class="text-label-small text-on-background-variant">Market Expansion</p>
+                                                </span>
+
+                                                <span class="btn tonal extra-small">
+                                                    <p class="text-label-small text-on-background-variant">Growth Strategy</p>
+                                                </span>
+                                                
+                                                <span class="btn tonal extra-small">
+                                                    <p class="text-label-small text-on-background-variant">Revenue Models</p>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="tab-pane fade" id="sales-boosting">
+                            
+                            <ul class="grid-3-base">
+
+                                <li data-aos="zoom-in-up">
+                                    <a href="#" class="card filled filled-hover">
+
+                                        <div class="figure">
+                                            <div class="icon-big opacity-75">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.813 11.612c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.986 4.986l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.292 -1.293l.292 -.293l.106 -.095c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.674 4.675a4 4 0 0 1 -3.775 3.599l-.206 .005h-12a4 4 0 0 1 -3.98 -3.603l6.687 -6.69l.106 -.095zm9.187 -9.612a4 4 0 0 1 3.995 3.8l.005 .2v9.585l-3.293 -3.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-.307 .306l-2.293 -2.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-5.307 5.306v-9.585a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-2.99 5l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
+                                            </div>
+
+                                            <img src="./src/assets/images/workshop-2.svg" alt="Lorem ipsum dolor sit amet " loading="lazy" class="img-card img-cover" />
+
+                                            <span class="btn filled extra-small">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 3.34a10 10 0 1 1 -4.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 4.995 -8.336z" /></svg>
+
+                                                <p class="text-body-medium">Sales Boosting</p>
+                                            </span>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <div class="wrapper-block">
+                                                <h4 class="text-title-large line-clamp line-clamp-2">Lorem ipsum dolor sit amet</h4>
+        
+                                                <p class="text-body-medium text-on-background-variant line-clamp line-clamp-4">Lorem ipsum dolor sit amet consectetur. Vestibulum euismod orci quis in molestie enim semper vitae. Sed vel sit elementum ornare tellus integer.</p>
+                                            </div>
+
+                                            <div class="wrapper-item">
+                                                <span class="btn tonal extra-small">
+                                                    <p class="text-label-small text-on-background-variant">Market Expansion</p>
+                                                </span>
+
+                                                <span class="btn tonal extra-small">
+                                                    <p class="text-label-small text-on-background-variant">Growth Strategy</p>
+                                                </span>
+                                                
+                                                <span class="btn tonal extra-small">
+                                                    <p class="text-label-small text-on-background-variant">Revenue Models</p>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="tab-pane fade" id="live">
+                            
+                            <div class="grid-3-base">
+
+                                <li data-aos="zoom-in-up">
+                                    <a href="#" class="card filled filled-hover">
+
+                                        <div class="figure">
+                                            <div class="icon-big opacity-75">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.813 11.612c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.986 4.986l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.292 -1.293l.292 -.293l.106 -.095c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.674 4.675a4 4 0 0 1 -3.775 3.599l-.206 .005h-12a4 4 0 0 1 -3.98 -3.603l6.687 -6.69l.106 -.095zm9.187 -9.612a4 4 0 0 1 3.995 3.8l.005 .2v9.585l-3.293 -3.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-.307 .306l-2.293 -2.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-5.307 5.306v-9.585a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-2.99 5l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
+                                            </div>
+
+                                            <img src="./src/assets/images/workshop-3.svg" alt="Lorem ipsum dolor sit amet " loading="lazy" class="img-card img-cover" />
+
+                                            <span class="btn filled extra-small">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 3.34a10 10 0 1 1 -4.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 4.995 -8.336z" /></svg>
+
+                                                <p class="text-body-medium">Live</p>
+                                            </span>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <div class="wrapper-block">
+                                                <h4 class="text-title-large line-clamp line-clamp-2">Lorem ipsum dolor sit amet</h4>
+        
+                                                <p class="text-body-medium text-on-background-variant line-clamp line-clamp-4">Lorem ipsum dolor sit amet consectetur. Vestibulum euismod orci quis in molestie enim semper vitae. Sed vel sit elementum ornare tellus integer.</p>
+                                            </div>
+
+                                            <div class="wrapper-item">
+                                                <span class="btn tonal extra-small">
+                                                    <p class="text-label-small text-on-background-variant">Market Expansion</p>
+                                                </span>
+
+                                                <span class="btn tonal extra-small">
+                                                    <p class="text-label-small text-on-background-variant">Growth Strategy</p>
+                                                </span>
+                                                
+                                                <span class="btn tonal extra-small">
+                                                    <p class="text-label-small text-on-background-variant">Revenue Models</p>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Releases -->
+            <section class="releases section" id="releases">
+
+                <div class="box-1 desctop" data-aos="zoom-in"></div>
+                <div class="box-2 desctop" data-aos="zoom-in"></div>
+                <div class="box-3"></div>
+
+                <div class="container container-lg">
+
+                    <div class="title-sec" data-aos="zoom-in-up">
+
+                        <span class="mobile">
+                            <h2 class="text-display-small">Sweeds <span class="text-linear-gradient">Releases</span></h2>
+                        </span>
+
+                        <span class="desctop">
+                            <h2 class="text-display-medium">Sweeds <span class="text-linear-gradient">Releases</span></h2>
+                        </span>
+
+                        <h5 class="text-title-medium text-on-background-variant">We support businesses with focused, practical solutions that drive growth, clarity, and long-term performance.</h5>
+
+                        <ul class="nav nav-tabs custom-scrollbar" id="releases-tabs">
+
+                            <li class="nav-item">
+                                <button type="button" class="nav-link active" id="article-tab" data-bs-toggle="tab" data-bs-target="#article">
+                                    <p class="text-body-medium">Articles</p>
+
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="nav-item">
+                                <button type="button" class="nav-link" id="book-tab" data-bs-toggle="tab" data-bs-target="#book">
+                                    <p class="text-body-medium">Book</p>
+
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="tab-content" id="workshops-tabs">
+
+                        <div class="tab-pane fade show active" id="article">
+
+                            <div class="swipper-container" data-swippers>
+
+                                <button type="button" class="icon-btn extra-large" data-swipper-prev data-bs-toggle="tooltip" data-bs-title="Prev" data-bs-placement="bottom">
+                                    <div class="arrow-dir">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
+                                    </div>
+                                </button>
+
+                                <ul class="swipper-3-base" data-swipper-list>
+
+                                    <li class="swipper-item" data-aos="zoom-in-up">
+                                        <a href="#" class="card filled filled-hover">
+
+                                            <div class="card-body">
+
+                                                <div class="wrapper-between">
+                                                    <img src="./src/assets/images/in.svg" alt="LinkedIn" loading="lazy" />
+
+                                                    <div class="flex text-on-background-variant">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-calendar-stats"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" /><path d="M18 14v4h4" /><path d="M14 18a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M15 3v4" /><path d="M7 3v4" /><path d="M3 11h16" /></svg>
+
+                                                        <p class="text-body-small">17 Oct, 2020</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="figure">
+                                                    <div class="icon-big opacity-75">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.813 11.612c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.986 4.986l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.292 -1.293l.292 -.293l.106 -.095c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.674 4.675a4 4 0 0 1 -3.775 3.599l-.206 .005h-12a4 4 0 0 1 -3.98 -3.603l6.687 -6.69l.106 -.095zm9.187 -9.612a4 4 0 0 1 3.995 3.8l.005 .2v9.585l-3.293 -3.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-.307 .306l-2.293 -2.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-5.307 5.306v-9.585a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-2.99 5l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
+                                                    </div>
+
+                                                    <img src="./src/assets/images/img-releses-1.svg" alt="Yesterday, we launched the epic first ed... More" loading="lazy" class="img-card img-cover" />
+                                                </div>
+
+                                                <h5 class="text-title-medium text-on-background-variant line-clamp line-clamp-2">Yesterday, we launched the epic first ed... <span class="text-secondary opacity-75">More</span></h5>
+
+                                                <div class="flex gap-4">
+                                                    <div class="avatar medium">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+
+                                                        <img src="./src/assets/images/avatar-releses-1.svg" alt="Ahmed Mohamed" loading="lazy" class="img-avatar img-cover" />
+                                                    </div>
+
+                                                    <div class="wrapper-content">
+                                                        <p class="text-body-large line-clamp line-clamp-1">Ahmed Mohamed</p>
+                                                        
+                                                        <p class="text-body-small text-secondary line-clamp line-clamp-1">GIAC Advisory Board | SIEM Cor</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </a>
+                                    </li>
+
+                                    <li class="swipper-item" data-aos="zoom-in-up">
+                                        <a href="#" class="card filled filled-hover">
+
+                                            <div class="card-body">
+
+                                                <div class="wrapper-between">
+                                                    <img src="./src/assets/images/in.svg" alt="LinkedIn" loading="lazy" />
+
+                                                    <div class="flex text-on-background-variant">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-calendar-stats"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" /><path d="M18 14v4h4" /><path d="M14 18a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M15 3v4" /><path d="M7 3v4" /><path d="M3 11h16" /></svg>
+
+                                                        <p class="text-body-small">17 Oct, 2020</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="figure">
+                                                    <div class="icon-big opacity-75">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.813 11.612c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.986 4.986l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.292 -1.293l.292 -.293l.106 -.095c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.674 4.675a4 4 0 0 1 -3.775 3.599l-.206 .005h-12a4 4 0 0 1 -3.98 -3.603l6.687 -6.69l.106 -.095zm9.187 -9.612a4 4 0 0 1 3.995 3.8l.005 .2v9.585l-3.293 -3.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-.307 .306l-2.293 -2.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-5.307 5.306v-9.585a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-2.99 5l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
+                                                    </div>
+
+                                                    <img src="./src/assets/images/img-releses-2.svg" alt="Yesterday, we launched the epic first ed... More" loading="lazy" class="img-card img-cover" />
+                                                </div>
+
+                                                <h5 class="text-title-medium text-on-background-variant line-clamp line-clamp-2">Yesterday, we launched the epic first ed... <span class="text-secondary opacity-75">More</span></h5>
+
+                                                <div class="flex gap-4">
+                                                    <div class="avatar medium">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+
+                                                        <img src="./src/assets/images/avatar-releses-2.svg" alt="Mohamed Ali" loading="lazy" class="img-avatar img-cover" />
+                                                    </div>
+
+                                                    <div class="wrapper-content">
+                                                        <p class="text-body-large line-clamp line-clamp-1">Mohamed Ali</p>
+                                                        
+                                                        <p class="text-body-small text-secondary line-clamp line-clamp-1">CEO @IBM</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </a>
+                                    </li>
+
+                                    <li class="swipper-item" data-aos="zoom-in-up">
+                                        <a href="#" class="card filled filled-hover">
+
+                                            <div class="card-body">
+
+                                                <div class="wrapper-between">
+                                                    <img src="./src/assets/images/in.svg" alt="LinkedIn" loading="lazy" />
+
+                                                    <div class="flex text-on-background-variant">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-calendar-stats"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" /><path d="M18 14v4h4" /><path d="M14 18a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M15 3v4" /><path d="M7 3v4" /><path d="M3 11h16" /></svg>
+
+                                                        <p class="text-body-small">17 Oct, 2020</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="figure">
+                                                    <div class="icon-big opacity-75">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.813 11.612c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.986 4.986l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.292 -1.293l.292 -.293l.106 -.095c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.674 4.675a4 4 0 0 1 -3.775 3.599l-.206 .005h-12a4 4 0 0 1 -3.98 -3.603l6.687 -6.69l.106 -.095zm9.187 -9.612a4 4 0 0 1 3.995 3.8l.005 .2v9.585l-3.293 -3.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-.307 .306l-2.293 -2.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-5.307 5.306v-9.585a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-2.99 5l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
+                                                    </div>
+
+                                                    <img src="./src/assets/images/img-releses-3.svg" alt="Yesterday, we launched the epic first ed... More" loading="lazy" class="img-card img-cover" />
+                                                </div>
+
+                                                <h5 class="text-title-medium text-on-background-variant line-clamp line-clamp-2">Yesterday, we launched the epic first ed... <span class="text-secondary opacity-75">More</span></h5>
+
+                                                <div class="flex gap-4">
+                                                    <div class="avatar medium">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+
+                                                        <img src="./src/assets/images/avatar-releses-3.svg" alt="Mahmoud Sami" loading="lazy" class="img-avatar img-cover" />
+                                                    </div>
+
+                                                    <div class="wrapper-content">
+                                                        <p class="text-body-large line-clamp line-clamp-1">Mahmoud Sami</p>
+                                                        
+                                                        <p class="text-body-small text-secondary line-clamp line-clamp-1">Manager @Kaspersky</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </a>
+                                    </li>
+
+                                    <li class="swipper-item" data-aos="zoom-in-up">
+                                        <a href="#" class="card filled filled-hover">
+
+                                            <div class="card-body">
+
+                                                <div class="wrapper-between">
+                                                    <img src="./src/assets/images/in.svg" alt="LinkedIn" loading="lazy" />
+
+                                                    <div class="flex text-on-background-variant">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-calendar-stats"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" /><path d="M18 14v4h4" /><path d="M14 18a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M15 3v4" /><path d="M7 3v4" /><path d="M3 11h16" /></svg>
+
+                                                        <p class="text-body-small">17 Oct, 2020</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="figure">
+                                                    <div class="icon-big opacity-75">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.813 11.612c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.986 4.986l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.292 -1.293l.292 -.293l.106 -.095c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.674 4.675a4 4 0 0 1 -3.775 3.599l-.206 .005h-12a4 4 0 0 1 -3.98 -3.603l6.687 -6.69l.106 -.095zm9.187 -9.612a4 4 0 0 1 3.995 3.8l.005 .2v9.585l-3.293 -3.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-.307 .306l-2.293 -2.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-5.307 5.306v-9.585a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-2.99 5l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
+                                                    </div>
+
+                                                    <img src="./src/assets/images/img-releses-4.svg" alt="Yesterday, we launched the epic first ed... More" loading="lazy" class="img-card img-cover" />
+                                                </div>
+
+                                                <h5 class="text-title-medium text-on-background-variant line-clamp line-clamp-2">Yesterday, we launched the epic first ed... <span class="text-secondary opacity-75">More</span></h5>
+
+                                                <div class="flex gap-4">
+                                                    <div class="avatar medium">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+
+                                                        <img src="./src/assets/images/avatar-releses-4.svg" alt="Rady Allam" loading="lazy" class="img-avatar img-cover" />
+                                                    </div>
+
+                                                    <div class="wrapper-content">
+                                                        <p class="text-body-large line-clamp line-clamp-1">Rady Allam</p>
+                                                        
+                                                        <p class="text-body-small text-secondary line-clamp line-clamp-1">Software Engineer @Solutions</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                                <button type="button" class="icon-btn extra-large" data-swipper-next data-bs-toggle="tooltip" data-bs-title="Next" data-bs-placement="bottom">
+                                    <div class="arrow-dir">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
+                                    </div>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        <div class="tab-pane fade" id="book">
+
+                            <div class="swipper-container" data-swippers>
+
+                                <button type="button" class="icon-btn extra-large" data-swipper-prev data-bs-toggle="tooltip" data-bs-title="Prev" data-bs-placement="bottom">
+                                    <div class="arrow-dir">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
+                                    </div>
+                                </button>
+
+                                <ul class="swipper-3-base" data-swipper-list>
+
+                                    <li class="swipper-item" data-aos="zoom-in-up">
+                                        <div class="card filled filled-hover">
+
+                                            <div class="card-body">
+
+                                                <div class="figure">
+                                                    <div class="icon-big opacity-75">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.813 11.612c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.986 4.986l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.292 -1.293l.292 -.293l.106 -.095c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.674 4.675a4 4 0 0 1 -3.775 3.599l-.206 .005h-12a4 4 0 0 1 -3.98 -3.603l6.687 -6.69l.106 -.095zm9.187 -9.612a4 4 0 0 1 3.995 3.8l.005 .2v9.585l-3.293 -3.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-.307 .306l-2.293 -2.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-5.307 5.306v-9.585a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-2.99 5l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
+                                                    </div>
+
+                                                    <img src="./src/assets/images/img-book.svg" alt="Yesterday, we launched the epic first ed... More" loading="lazy" class="img-card img-cover" />
+                                                </div>
+
+                                                <div class="wrapper-block">
+                                                    <h5 class="text-title-medium line-clamp line-clamp-2">Lorem ipsum dolor</h5>
+    
+                                                    <p class="text-body-medium text-on-background-variant line-clamp line-clamp-4">Lorem ipsum dolor sit amet consectetur. Vestibulum euismod orci quis in molestie enim semper vitae. </p>
+                                                </div>
+
+                                                <a href="#" class="btn tonal hover small w-full">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-file"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 2l.117 .007a1 1 0 0 1 .876 .876l.007 .117v4l.005 .15a2 2 0 0 0 1.838 1.844l.157 .006h4l.117 .007a1 1 0 0 1 .876 .876l.007 .117v9a3 3 0 0 1 -2.824 2.995l-.176 .005h-10a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-14a3 3 0 0 1 2.824 -2.995l.176 -.005h5z" /><path d="M19 7h-4l-.001 -4.001z" /></svg>
+
+                                                    <p class="text-body-large">View Book</p>
+
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-external-link"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg>
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+                                    <li class="swipper-item" data-aos="zoom-in-up">
+                                        <div class="card filled filled-hover">
+
+                                            <div class="card-body">
+
+                                                <div class="figure">
+                                                    <div class="icon-big opacity-75">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.813 11.612c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.986 4.986l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.292 -1.293l.292 -.293l.106 -.095c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.674 4.675a4 4 0 0 1 -3.775 3.599l-.206 .005h-12a4 4 0 0 1 -3.98 -3.603l6.687 -6.69l.106 -.095zm9.187 -9.612a4 4 0 0 1 3.995 3.8l.005 .2v9.585l-3.293 -3.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-.307 .306l-2.293 -2.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-5.307 5.306v-9.585a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-2.99 5l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
+                                                    </div>
+
+                                                    <img src="./src/assets/images/img-book.svg" alt="Yesterday, we launched the epic first ed... More" loading="lazy" class="img-card img-cover" />
+                                                </div>
+
+                                                <div class="wrapper-block">
+                                                    <h5 class="text-title-medium line-clamp line-clamp-2">Lorem ipsum dolor</h5>
+    
+                                                    <p class="text-body-medium text-on-background-variant line-clamp line-clamp-4">Lorem ipsum dolor sit amet consectetur. Vestibulum euismod orci quis in molestie enim semper vitae. </p>
+                                                </div>
+
+                                                <a href="#" class="btn tonal hover small w-full">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-file"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 2l.117 .007a1 1 0 0 1 .876 .876l.007 .117v4l.005 .15a2 2 0 0 0 1.838 1.844l.157 .006h4l.117 .007a1 1 0 0 1 .876 .876l.007 .117v9a3 3 0 0 1 -2.824 2.995l-.176 .005h-10a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-14a3 3 0 0 1 2.824 -2.995l.176 -.005h5z" /><path d="M19 7h-4l-.001 -4.001z" /></svg>
+
+                                                    <p class="text-body-large">View Book</p>
+
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-external-link"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg>
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+                                    <li class="swipper-item" data-aos="zoom-in-up">
+                                        <div class="card filled filled-hover">
+
+                                            <div class="card-body">
+
+                                                <div class="figure">
+                                                    <div class="icon-big opacity-75">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.813 11.612c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.986 4.986l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.292 -1.293l.292 -.293l.106 -.095c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.674 4.675a4 4 0 0 1 -3.775 3.599l-.206 .005h-12a4 4 0 0 1 -3.98 -3.603l6.687 -6.69l.106 -.095zm9.187 -9.612a4 4 0 0 1 3.995 3.8l.005 .2v9.585l-3.293 -3.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-.307 .306l-2.293 -2.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-5.307 5.306v-9.585a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-2.99 5l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
+                                                    </div>
+
+                                                    <img src="./src/assets/images/img-book.svg" alt="Yesterday, we launched the epic first ed... More" loading="lazy" class="img-card img-cover" />
+                                                </div>
+
+                                                <div class="wrapper-block">
+                                                    <h5 class="text-title-medium line-clamp line-clamp-2">Lorem ipsum dolor</h5>
+    
+                                                    <p class="text-body-medium text-on-background-variant line-clamp line-clamp-4">Lorem ipsum dolor sit amet consectetur. Vestibulum euismod orci quis in molestie enim semper vitae. </p>
+                                                </div>
+
+                                                <a href="#" class="btn tonal hover small w-full">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-file"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 2l.117 .007a1 1 0 0 1 .876 .876l.007 .117v4l.005 .15a2 2 0 0 0 1.838 1.844l.157 .006h4l.117 .007a1 1 0 0 1 .876 .876l.007 .117v9a3 3 0 0 1 -2.824 2.995l-.176 .005h-10a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-14a3 3 0 0 1 2.824 -2.995l.176 -.005h5z" /><path d="M19 7h-4l-.001 -4.001z" /></svg>
+
+                                                    <p class="text-body-large">View Book</p>
+
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-external-link"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg>
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+                                    <li class="swipper-item" data-aos="zoom-in-up">
+                                        <div class="card filled filled-hover">
+
+                                            <div class="card-body">
+
+                                                <div class="figure">
+                                                    <div class="icon-big opacity-75">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.813 11.612c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.986 4.986l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.292 -1.293l.292 -.293l.106 -.095c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.674 4.675a4 4 0 0 1 -3.775 3.599l-.206 .005h-12a4 4 0 0 1 -3.98 -3.603l6.687 -6.69l.106 -.095zm9.187 -9.612a4 4 0 0 1 3.995 3.8l.005 .2v9.585l-3.293 -3.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-.307 .306l-2.293 -2.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-5.307 5.306v-9.585a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-2.99 5l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
+                                                    </div>
+
+                                                    <img src="./src/assets/images/img-book.svg" alt="Yesterday, we launched the epic first ed... More" loading="lazy" class="img-card img-cover" />
+                                                </div>
+
+                                                <div class="wrapper-block">
+                                                    <h5 class="text-title-medium line-clamp line-clamp-2">Lorem ipsum dolor</h5>
+    
+                                                    <p class="text-body-medium text-on-background-variant line-clamp line-clamp-4">Lorem ipsum dolor sit amet consectetur. Vestibulum euismod orci quis in molestie enim semper vitae. </p>
+                                                </div>
+
+                                                <a href="#" class="btn tonal hover small w-full">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-file"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 2l.117 .007a1 1 0 0 1 .876 .876l.007 .117v4l.005 .15a2 2 0 0 0 1.838 1.844l.157 .006h4l.117 .007a1 1 0 0 1 .876 .876l.007 .117v9a3 3 0 0 1 -2.824 2.995l-.176 .005h-10a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-14a3 3 0 0 1 2.824 -2.995l.176 -.005h5z" /><path d="M19 7h-4l-.001 -4.001z" /></svg>
+
+                                                    <p class="text-body-large">View Book</p>
+
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-external-link"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg>
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                                <button type="button" class="icon-btn extra-large" data-swipper-next data-bs-toggle="tooltip" data-bs-title="Next" data-bs-placement="bottom">
+                                    <div class="arrow-dir">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
+                                    </div>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Media -->
+            <section class="media section" id="media">
+
+                <div class="box-1 desctop" data-aos="zoom-in"></div>
+                <div class="box-2 desctop" data-aos="zoom-in"></div>
+                <div class="box-3"></div>
+
+                <div class="container container-lg">
+
+                    <div class="title-sec" data-aos="zoom-in-up">
+
+                        <span class="mobile">
+                            <h2 class="text-display-small">Media <span class="text-linear-gradient">Appearances</span></h2>
+                        </span>
+
+                        <span class="desctop">
+                            <h2 class="text-display-medium">Media <span class="text-linear-gradient">Appearances</span></h2>
+                        </span>
+
+                        <h5 class="text-title-medium text-on-background-variant">Conversations and interviews discussing business growth, strategy, and real-world market insights.</h5>
+
+                    </div>
+
+                    <div class="grid-2-base">
+
+                        <a href="#" class="card filled">
+
+                            <div class="figure">
+                                <div class="icon-big opacity-75">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.813 11.612c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.986 4.986l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.292 -1.293l.292 -.293l.106 -.095c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.674 4.675a4 4 0 0 1 -3.775 3.599l-.206 .005h-12a4 4 0 0 1 -3.98 -3.603l6.687 -6.69l.106 -.095zm9.187 -9.612a4 4 0 0 1 3.995 3.8l.005 .2v9.585l-3.293 -3.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-.307 .306l-2.293 -2.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-5.307 5.306v-9.585a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-2.99 5l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
+                                </div>
+
+                                <img src="./src/assets/images/img-media-1.svg" alt="Lorem ipsum dolor sit amet " loading="lazy" class="img-card img-cover" />
+                            </div>
+
+                            <div class="card-body">
+                                <div class="wrapper">
+                                    <span class="btn tonal extra-small">
+                                        <p class="text-body-small text-linear-gradient">Podcast</p>
+                                    </span>
+
+                                    <div class="flex">
+                                        <div class="text-error">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-brand-youtube"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z" /></svg>
+                                        </div>
+
+                                        <p class="text-body-small">YouTube</p>
+                                    </div>
+                                </div>
+
+                                <h4 class="text-headline-small line-clamp line-clamp-2">About business, startups, and the role of marketing</h4>
+
+                                <p class="text-body-medium text-on-background-variant line-clamp line-clamp-4">Lorem ipsum dolor sit amet consectetur. Vestibulum euismod orci quis in molestie enim semper vitae. Sed vel sit elementum ornare tellus integer. .</p>
+                            </div>
+
+                        </a>
+
+                        <a href="#" class="card filled">
+
+                            <div class="figure">
+                                <div class="icon-big opacity-75">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.813 11.612c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.986 4.986l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.292 -1.293l.292 -.293l.106 -.095c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.674 4.675a4 4 0 0 1 -3.775 3.599l-.206 .005h-12a4 4 0 0 1 -3.98 -3.603l6.687 -6.69l.106 -.095zm9.187 -9.612a4 4 0 0 1 3.995 3.8l.005 .2v9.585l-3.293 -3.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-.307 .306l-2.293 -2.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-5.307 5.306v-9.585a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-2.99 5l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
+                                </div>
+
+                                <img src="./src/assets/images/img-media-2.svg" alt="Lorem ipsum dolor sit amet " loading="lazy" class="img-card img-cover" />
+                            </div>
+
+                            <div class="card-body">
+                                <div class="wrapper">
+                                    <span class="btn tonal extra-small">
+                                        <p class="text-body-small text-linear-gradient">Podcast</p>
+                                    </span>
+
+                                    <div class="flex">
+                                        <div class="text-error">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-brand-youtube"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z" /></svg>
+                                        </div>
+
+                                        <p class="text-body-small">YouTube</p>
+                                    </div>
+                                </div>
+
+                                <h4 class="text-headline-small line-clamp line-clamp-2">Life-changing management strategies</h4>
+
+                                <p class="text-body-medium text-on-background-variant line-clamp line-clamp-4">Lorem ipsum dolor sit amet consectetur. Vestibulum euismod orci quis in molestie enim semper vitae. Sed vel sit elementum ornare tellus integer. .</p>
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Contact Us -->
+            <section class="contact-us section">
+
+                <div class="container container-lg">
+
+                    <div class="title-sec" data-aos="zoom-in-up">
+
+                        <span class="mobile">
+                            <h2 class="text-display-small">Let's Work <span class="text-linear-gradient">Together</span></h2>
+                        </span>
+
+                        <span class="desctop">
+                            <h2 class="text-display-medium">Let's Work <span class="text-linear-gradient">Together</span></h2>
+                        </span>
+
+                        <h5 class="text-title-medium text-on-background-variant">Let’s connect and explore how focused strategy and structured execution can drive meaningful business results.</h5>
+
+                    </div>
+
+                    <div class="grid-2-base">
+
+                        <!-- go -->
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </article>
+
+    </main>
 
 </body>
 
