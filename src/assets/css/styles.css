@@ -1693,9 +1693,7 @@ html[dir="rtl"] .swipper-container .icon-btn[data-swipper-prev] {
 /**
  * Testimonials
  */
-.testimonials .swipper-item {
-    scroll-snap-align: center;
-}
+.testimonials .swipper-item { scroll-snap-align: center; }
 
 /* -------------------------------------------- *\
  * MEDIA QUERY
